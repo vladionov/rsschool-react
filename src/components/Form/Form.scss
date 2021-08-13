@@ -1,0 +1,96 @@
+.App-Form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 2px solid rgba(84, 122, 165, .5);;
+  border-radius: 5px;
+  color: rgb(84, 122, 165);
+  width: 70%;
+  max-width: 400px;
+  label {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    input {
+      margin-top: .3rem;
+      padding: 5px 15px;
+      font-size: 1.3rem;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      background: rgba(255,255,255, .5);
+      color: rgb(84, 122, 165);
+    }
+  }
+}
+
+.Form {
+  &__city {
+    * {
+      margin-top: .3rem;
+      background: rgba(255,255,255, .5);
+      padding: 5px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      outline: none;
+      color: rgb(84, 122, 165);
+    }
+  }
+  &__gdpr {
+    display: flex;
+    align-items: center;
+    flex-direction: row !important;
+    position: relative;
+    span {
+      display: flex;
+    }
+  }
+  &__switcher {
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    padding: 2px;
+    border: 2px solid rgb(84, 122, 165);
+    width: 115px;
+    display: flex;
+    justify-content: space-between;
+    transition: all .3s ease;
+    span {
+      padding: 2px 3px;
+    }
+    span.active {
+      background: rgb(84, 122, 165);
+      color: #C3D2D5;
+    }
+  }
+  &__btn {
+    padding: 10px 55px;
+    font-size: 1.1rem;
+    background-color: rgb(84, 122, 165);
+    color: #C3D2D5;
+    border-radius: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    align-self: center;
+    transition: all .5s ease;
+    border: 2px solid rgb(84, 122, 165);
+    cursor: pointer;
+    &:hover {
+      background-color: transparent;
+      color: rgb(84, 122, 165);
+      border: 2px solid rgb(84, 122, 165);
+    }
+  }
+}
+
+.checked {
+  margin-right: 30px;
+}
+
+.error {
+  font-size: 10px;
+  color: #ff3322;
+  margin: 0;
+  padding: 0;
+}
